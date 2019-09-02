@@ -6,9 +6,11 @@ package org.fasttrackit;
  */
 public class App {
     public static void main(String[] args) {
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+        engine.capacity = 1600;
 
-
-        Car car = new Car();
+        Car car = new Car(engine);
         car.name = "Dacia";
         car.fuelLevel = 60;
         car.milage = 8.5;
@@ -16,11 +18,7 @@ public class App {
         car.maxSpeed = 180;
         car.fuelType = "Gasoline";
 
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
-        engine.capacity = 1600;
 
-        car.engine = engine;
 
         System.out.println(car.name);
         System.out.println(car.traveledDistance);
@@ -28,7 +26,8 @@ public class App {
 
         car.accelerate(60, 1);
 
-        Car car2 = new Car();
+
+        Car car2 = new Car(new Engine());
         car2.name = "Golf";
         car.fuelLevel = 75;
         car.milage = 9.7;
