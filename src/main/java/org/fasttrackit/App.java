@@ -21,7 +21,7 @@ public class App {
         car.setMaxSpeed( 180);
         car.setFuelType ("Gasoline");
 
-
+        System.out.println( "Car object:" + car.toString());
 
         System.out.println(car.getName());
         System.out.println(car.getTraveledDistance());
@@ -76,7 +76,11 @@ public class App {
 //                    }
         // this is a one-line comment
 
-
+        HybridCar hybridCar = new HybridCar();
+        hybridCar.setName(" cheater");
+        hybridCar. accelerate( 60, 1 );
+        System.out.println( "Fuel level:" + hybridCar.getFuelLevel());
+        System.out.println( "Traveled distance:" + hybridCar.getFuelLevel());
     }}
 
 

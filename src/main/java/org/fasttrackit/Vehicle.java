@@ -114,6 +114,19 @@ public class Vehicle {
 
 
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", milage=" + milage +
+                ", maxSpeed=" + maxSpeed +
+                ", fuelType='" + fuelType + '\'' +
+                ", fuelLevel=" + fuelLevel +
+                ", traveledDistance=" + traveledDistance +
+                ", running=" + running +
+                '}';
+    }
 }
 
 
