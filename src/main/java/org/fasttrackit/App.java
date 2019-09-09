@@ -76,11 +76,16 @@ public class App {
 //                    }
         // this is a one-line comment
 
-        HybridCar hybridCar = new HybridCar();
+        Vehicle hybridCar = new HybridCar();
         hybridCar.setName(" cheater");
+        // method implementation from object's class not from variable's class
         hybridCar. accelerate( 60, 1 );
+
         System.out.println( "Fuel level:" + hybridCar.getFuelLevel());
         System.out.println( "Traveled distance:" + hybridCar.getFuelLevel());
+        // varriable type decides what methods can be envoked
+        //type casting
+        ((HybridCar) hybridCar).fly();
     }}
 
 
