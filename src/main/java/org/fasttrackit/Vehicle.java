@@ -92,30 +92,30 @@ public class Vehicle {
             System.out.println("you are out of fuel...");
             return 0;
         }
-            System.out.println(name + " is accelerating with " + speed + " km/h for " + durationInHours + " h.");
+        System.out.println(name + " is accelerating with " + speed + " km/h for " + durationInHours + " h.");
 
-            double distance = speed * durationInHours;
+        double distance = speed * durationInHours;
 
-            System.out.println("Distance: " + distance);
+        System.out.println("Distance: " + distance);
 
-            traveledDistance = traveledDistance + distance;
+        traveledDistance = traveledDistance + distance;
 
-            // same result as the above statement
+        // same result as the above statement
 //        traveledDistance += distance;
 
-            double usedFuel = distance * milage / 100;
+        double usedFuel = distance * milage / 100;
 
-            System.out.println("Used fuel: " + usedFuel);
+        System.out.println("Used fuel: " + usedFuel);
 
-            fuelLevel -= usedFuel;
+        fuelLevel -= usedFuel;
 
-            System.out.println("Remaining fuel: " + fuelLevel);
+        System.out.println("Remaining fuel: " + fuelLevel);
 
-            ///incrementing / decrementing by 1
+        ///incrementing / decrementing by 1
 //        fuelLevel = fuelLevel +1;
 //        fuelLevel += 1;
 //        fuelLevel ++;
-            return distance;
+        return distance;
 
     }
 

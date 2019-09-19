@@ -4,10 +4,15 @@ import java.util.Scanner;
 
 /**
  * Hello world!
- *
  */
 public class App<Public> {
     public static void main(String[] args) {
+
+        Game game = new Game();
+        game.start();
+
+
+
 //  Engine engine = new Engine();
 //  engine.manufacturer = "Renault";
 //  engine.capacity = 1600;
@@ -41,23 +46,23 @@ public class App<Public> {
 //  car.setName("Skoda");
 //  car.setName(null);
 
-    //concatenantion
+        //concatenantion
 
 
- // System.out.println("Car2 name" + car2.getName());
- // System.out.println("Car2 name" + car.getName());
+        // System.out.println("Car2 name" + car2.getName());
+        // System.out.println("Car2 name" + car.getName());
 
 
- //     car = car2;
- //     System.out.println("Modulo examples");
- //     System.out.println(4 % 2);
- //     System.out.println(4 % 3);
+        //     car = car2;
+        //     System.out.println("Modulo examples");
+        //     System.out.println(4 % 2);
+        //     System.out.println(4 % 3);
 
- //     System.out.println("Please enter some text");
- //     Scanner scanner = new Scanner(System.in);
- //     String text = scanner.nextLine();
+        //     System.out.println("Please enter some text");
+        //     Scanner scanner = new Scanner(System.in);
+        //     String text = scanner.nextLine();
 
- //     System.out.println("Imput from user: " + text);
+        //     System.out.println("Imput from user: " + text);
 
 //        System.out.println( " Static variables example");
 //
@@ -76,17 +81,18 @@ public class App<Public> {
 //                    }
         // this is a one-line comment
 
-        Vehicle hybridCar = new HybridCar();
-        hybridCar.setName(" cheater");
-        // method implementation from object's class not from variable's class
-        hybridCar. accelerate( 60, 1 );
+        //    Vehicle hybridCar = new HybridCar();
+        //    hybridCar.setName(" cheater");
+        //    // method implementation from object's class not from variable's class
+        //    hybridCar. accelerate( 60, 1 );
 
-        System.out.println( "Fuel level:" + hybridCar.getFuelLevel());
-        System.out.println( "Traveled distance:" + hybridCar.getFuelLevel());
-        // varriable type decides what methods can be envoked
-        //type casting
-        ((HybridCar) hybridCar).fly();
-    }}
+        //    System.out.println( "Fuel level:" + hybridCar.getFuelLevel());
+        //    System.out.println( "Traveled distance:" + hybridCar.getFuelLevel());
+        //    // varriable type decides what methods can be envoked
+        //    //type casting
+        //    ((HybridCar) hybridCar).fly();
+    }
+}
 
 
 

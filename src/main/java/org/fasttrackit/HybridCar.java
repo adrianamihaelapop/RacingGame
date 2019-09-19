@@ -1,7 +1,7 @@
 package org.fasttrackit;
 //overriding
 
-public class HybridCar extends  Vehicle {
+public class HybridCar extends Vehicle {
 
     @Override
     public double accelerate(double speed, double durationInHours) {
@@ -11,16 +11,18 @@ public class HybridCar extends  Vehicle {
         double distance = actualSpeed * durationInHours;
 
         setTraveledDistance(getTraveledDistance() + distance);
-        System.out.println( "Cheater!!!");
-        return  distance;
+        System.out.println("Cheater!!!");
+        return distance;
 
     }
+
     //co-variant return type
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return new HybridCar();
     }
-    public  void  fly () {
-        System.out.println( "Yeeey! Flying!");
+
+    public void fly() {
+        System.out.println("Yeeey! Flying!");
     }
 }

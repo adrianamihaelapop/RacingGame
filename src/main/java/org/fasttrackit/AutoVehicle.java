@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class AutoVehicle extends  Vehicle {
+public class AutoVehicle extends Vehicle {
 
     // has-a realtionship
     Engine engine;
@@ -10,10 +10,11 @@ public class AutoVehicle extends  Vehicle {
 
 
     }
+
     // constructor overloading
-    public  AutoVehicle ( ){
+    public AutoVehicle() {
         //this.engine = new Engine();
 
-        this (new Engine());
+        this(new Engine());
     }
 }
