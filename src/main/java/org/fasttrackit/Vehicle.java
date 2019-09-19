@@ -48,7 +48,7 @@ public class Vehicle {
         this.fuelType = fuelType;
     }
 
-    public double getFuelLevel() {
+    public double getFuelLevel(int i) {
         return fuelLevel;
     }
 
