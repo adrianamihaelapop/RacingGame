@@ -90,12 +90,9 @@ public class Vehicle {
         }
         if (fuelLevel <= 0) {
             System.out.println("you are out of fuel...");
+            return 0;
         }
-        return 0;
-
-        {
             System.out.println(name + " is accelerating with " + speed + " km/h for " + durationInHours + " h.");
-
 
             double distance = speed * durationInHours;
 
@@ -119,7 +116,7 @@ public class Vehicle {
 //        fuelLevel += 1;
 //        fuelLevel ++;
             return distance;
-        }
+
     }
 
     @Override
