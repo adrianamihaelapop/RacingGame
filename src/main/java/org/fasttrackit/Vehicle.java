@@ -2,15 +2,15 @@ package org.fasttrackit;
 
 public class Vehicle {
 
-  private static  int totalCount;
+    private static int totalCount;
 
-  private String name;
-  private double milage;
-  private double maxSpeed;
-  private String fuelType;
-  private double fuelLevel;
-  private double traveledDistance;
-  private boolean running;
+    private String name;
+    private double milage;
+    private double maxSpeed;
+    private String fuelType;
+    private double fuelLevel;
+    private double traveledDistance;
+    private boolean running;
 
     public Vehicle() {
         totalCount++;
@@ -76,43 +76,50 @@ public class Vehicle {
         return totalCount;
     }
 
-    public  double accelerate ( double Speed) {
-        return  accelerate( 34, 1);
+    public double accelerate(double Speed) {
+        return accelerate(34, 1);
 
     }
 
-    public double accelerate (double speed, double durationInHours) {
-        System.out.println(name + " is accelerating with " + speed + " km/h for " + durationInHours + " h.");
 
-        double distance = speed * durationInHours;
+    public double accelerate(double speed, double durationInHours) {
 
-        System.out.println("Distance: " + distance);
+        if (speed > maxSpeed) {
+            System.out.println("Maximum speed exceeded.");
+            return 0;
+        }
+        if (fuelLevel <= 0) {
+            System.out.println("you are out of fuel...");
+        }
+        return 0;
 
-        traveledDistance = traveledDistance + distance;
+        {
+            System.out.println(name + " is accelerating with " + speed + " km/h for " + durationInHours + " h.");
 
-        // same result as the above statement
+
+            double distance = speed * durationInHours;
+
+            System.out.println("Distance: " + distance);
+
+            traveledDistance = traveledDistance + distance;
+
+            // same result as the above statement
 //        traveledDistance += distance;
 
-        double usedFuel = distance * milage / 100;
+            double usedFuel = distance * milage / 100;
 
-        System.out.println("Used fuel: " + usedFuel);
+            System.out.println("Used fuel: " + usedFuel);
 
-        fuelLevel -= usedFuel;
+            fuelLevel -= usedFuel;
 
-        System.out.println("Remaining fuel: " + fuelLevel);
+            System.out.println("Remaining fuel: " + fuelLevel);
 
-        ///incrementing / decrementing by 1
+            ///incrementing / decrementing by 1
 //        fuelLevel = fuelLevel +1;
 //        fuelLevel += 1;
 //        fuelLevel ++;
-
-
-        return distance;
-
-
-
-
-
+            return distance;
+        }
     }
 
     @Override
@@ -128,5 +135,3 @@ public class Vehicle {
                 '}';
     }
 }
-
-

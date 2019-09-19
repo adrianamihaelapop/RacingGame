@@ -6,58 +6,58 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class App {
+public class App<Public> {
     public static void main(String[] args) {
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
-        engine.capacity = 1600;
+//  Engine engine = new Engine();
+//  engine.manufacturer = "Renault";
+//  engine.capacity = 1600;
 
-        Car car = new Car(engine);
-        car.setName(" Dacia");
-        car.setFuelLevel( 60);
-        car.setMilage( 8.5);
+//  Car car = new Car(engine);
+//  car.setName(" Dacia");
+//  car.setFuelLevel( 60);
+//  car.setMilage( 8.5);
 
-        car.doorCount = 5;
-        car.setMaxSpeed( 180);
-        car.setFuelType ("Gasoline");
+//  car.doorCount = 5;
+//  car.setMaxSpeed( 180);
+//  car.setFuelType ("Gasoline");
 
-        System.out.println( "Car object:" + car.toString());
+//  System.out.println( "Car object:" + car.toString());
 
-        System.out.println(car.getName());
-        System.out.println(car.getTraveledDistance());
-        System.out.println(car.isRunning());
+//  System.out.println(car.getName());
+//  System.out.println(car.getTraveledDistance());
+//  System.out.println(car.isRunning());
 
-        car.accelerate(60, 1);
-
-
-        Car car2 = new Car(new Engine());
-        car2.setName("Golf");
-        car.setFuelLevel(75 );
-        car.setMilage(9.7 );
-        car.doorCount = 8;
-        car.setMaxSpeed(230 );
-        car.setFuelType("High");
-
-        car.setName("Skoda");
-        car.setName(null);
-
-        //concatenantion
+//  car.accelerate(60, 1);
 
 
-        System.out.println("Car2 name" + car2.getName());
-        System.out.println("Car2 name" + car.getName());
+//  Car car2 = new Car(new Engine());
+//  car2.setName("Golf");
+//  car.setFuelLevel(75 );
+//  car.setMilage(9.7 );
+//  car.doorCount = 8;
+//  car.setMaxSpeed(230 );
+//  car.setFuelType("High");
+
+//  car.setName("Skoda");
+//  car.setName(null);
+
+    //concatenantion
 
 
-        car = car2;
-        System.out.println("Modulo examples");
-        System.out.println(4 % 2);
-        System.out.println(4 % 3);
+ // System.out.println("Car2 name" + car2.getName());
+ // System.out.println("Car2 name" + car.getName());
 
-        System.out.println("Please enter some text");
-        Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
 
-        System.out.println("Imput from user: " + text);
+ //     car = car2;
+ //     System.out.println("Modulo examples");
+ //     System.out.println(4 % 2);
+ //     System.out.println(4 % 3);
+
+ //     System.out.println("Please enter some text");
+ //     Scanner scanner = new Scanner(System.in);
+ //     String text = scanner.nextLine();
+
+ //     System.out.println("Imput from user: " + text);
 
 //        System.out.println( " Static variables example");
 //
