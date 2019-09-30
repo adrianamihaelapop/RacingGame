@@ -48,7 +48,11 @@ public class Vehicle {
         this.fuelType = fuelType;
     }
 
-    public double getFuelLevel(int i) {
+    public static void setTotalCount(int totalCount) {
+        Vehicle.totalCount = totalCount;
+    }
+
+    public double getFuelLevel() {
         return fuelLevel;
     }
 
